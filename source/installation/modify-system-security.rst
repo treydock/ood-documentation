@@ -33,6 +33,14 @@ If you experience denials when running SELinux with Open OnDemand please provide
 
       cat /var/log/audit/audit.log | audit2allow -M ood
 
+The OnDemand SELinux package does not package policy changes for batch systems as those will be going to be site specific.
+If you experience denials and wish to write a custom policy these are the basic steps:
+
+   .. code-block:: sh
+
+      cat /var/log/audit/audit.log | audit2allow -M mypolicy
+      semodule -i mypolicy.pp
+
 .. _firewall:
 
 Firewall
