@@ -66,6 +66,9 @@ software requirements:
 
       sudo yum install ondemand-selinux
 
+.. DANGER::
+   Support for SELinux on the Open OnDemand host is currently considered an alpha feature.
+
 .. note::
 
    For some older systems, user ids (UID) may start at ``500`` and not the
