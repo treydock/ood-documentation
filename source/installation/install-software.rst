@@ -47,6 +47,12 @@ software requirements:
 
       sudo yum install ondemand
 
+#. (Optional) **RHEL/CentOS 8 only** Enable mod_auth_openidc if using Dex authentication
+
+   .. code-block:: sh
+
+      sudo dnf module enable mod_auth_openidc:2.3
+
 #. (Optional) Install :ref:`authentication-dex` package
 
    .. note::
